@@ -69,14 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.all(8),
-              child: Container(
-                width: 100,
-                height: 100,
-                child: Text('FORM LOGIN'),
-              ),
-            ),
+    
             Container(
               padding: EdgeInsets.all(10),
               child: TextField(

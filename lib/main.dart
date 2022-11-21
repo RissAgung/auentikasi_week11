@@ -6,7 +6,12 @@ import 'package:flutter/material.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: 'AIzaSyCggSf6YNHqUxHDqOjyXk82Q_HPSynw89s',
+          appId: '1:289815053444:android:bb944f4a325859b5002ed1',
+          messagingSenderId: '289815053444',
+          projectId: 'auth-minggu11'));
   runApp(MyApp());
 }
 
@@ -15,6 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Authentication Minggu 11',
       home: LoginScreen(),
     );
